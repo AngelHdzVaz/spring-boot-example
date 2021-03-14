@@ -1,6 +1,6 @@
 package com.example.demo.comandosP
 
-
+import com.example.demo.domain.Person
 
 class Persona{
 
@@ -9,13 +9,13 @@ class Persona{
 	Integer age
 	String fullName 
 
-	static PersonCommand toPersonCommand(Person person){
-		new PersonCommand={
+	static Persona toPersonCommand(Person person){
+		new Persona(
 			name: person.name,
 			lastName: person.lastName,
 			age: person.age,
-			fullName: "${name}.${lastName}";
-		}
+			fullName: "${person.name} ${person.lastName}"
+		)
 
 	}
 
