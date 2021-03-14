@@ -16,6 +16,10 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.codehaus.groovy:groovy'
+	implementation "mysql:mysql-connector-java:8.0.22"
+    implementation "com.zaxxer:HikariCP:3.1.0" //manejar conexion a bd
+    implementation "org.springframework.boot:spring-boot-starter-data-jpa" //manejo de base de datos
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
